@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.collapse ul li a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: contain;
+}

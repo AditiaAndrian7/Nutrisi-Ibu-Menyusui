@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- section navbar start-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <!-- Nama Logo -->
+          <h1 class="navbar-brand text-primary">Logo</h1>
+
+          <!-- Hamburger -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kuis</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- section navbar end-->
+
+    <!-- section kuis end-->
+    <section class="kuiss py-5 bg-white" id="kuiss">
+      <div class="container py-5">
+        <h1 class="display-3 fw-bold text-center">Lorem</h1>
+        <div
+          class="card shadow-lg p-4 mx-auto"
+          id="quiz-card"
+          style="max-width: 600px; border-radius: 15px"
+        >
+          <div class="mb-3">
+            <h3 id="question" class="fw-bold">Pertanyaan muncul di sini</h3>
+            <div class="progress" style="height: 10px">
+              <div
+                id="progress-bar"
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
+          <div class="d-grid gap-3 mt-3" id="answers">
+            <!-- Jawaban muncul di sini -->
+          </div>
+          <button
+            class="btn btn-primary mt-4"
+            id="next-btn"
+            style="display: none"
+          >
+            Next
+          </button>
+        </div>
+
+        <div id="result" class="text-center mt-4" style="display: none">
+          <h3>Skor kamu: <span id="score"></span></h3>
+          <button class="btn btn-success mt-3" onclick="restartQuiz()">
+            Ulangi Quiz
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section penutup start-->
+    <footer class="bg-primary text-light py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-1">Edukasi Nutrisi Ibu Menyusui</p>
+        <p class="mb-1">
+          Materi edukasi ini hanya bersifat informasi, bukan pengganti saran
+          medis.
+        </p>
+        <hr class="border-light" />
+        <p class="mb-0">&copy; 2025 Salsa. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- section penutup end-->
+
+    <!-- section kuis end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
